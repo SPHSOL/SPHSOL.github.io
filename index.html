@@ -1,12 +1,62 @@
-<!doctype html>
+<?php include "sendmail.php"; ?>
+<!-- <!doctype html> -->
 <html>
+
 <head>
-  <title>SPHSOL</title>
-  <meta name="description" content="Our first page">
-  <meta name="keywords" content="html tutorial template">
+  <title>SPHSOL-HOME</title>
+  <meta name="author" content="Yifei Jiao">
+  <meta name="description" content="SPHSOL for high-velocity impact simulations">
+  <link rel="icon" href="./images/mylogo1.png" sizes="32x32">
 </head>
-<body>
-  <center><img src="./images/mylogo2.png" width="500"></center>
-  This is a test.
+
+<style>
+  .div1{height:140px; background-color:#0F2434; float:top;}
+  .div2{height:100px; background-color:white; float:bottom;}
+</style>
+
+<body style="margin: 0">
+  <div class="div1">
+    <a href="index.html"><img src="./images/mylogo2.png" width="400"></a>
+  </div>
+
+  <div class="div2">
+  <article style="margin-top:30px; line-height:30px; margin-left:50px; margin-right:50px">
+    <div>
+      <h1>
+        Welcome to SPHSOL
+      </h1>
+      <img src="./images/simu1.png" width="900px">
+      <p>
+        <b><i>SPHSOL</i></b> is developed for hypervelocity impact simulations in astrodynamics and planetary science, based on the smoothed particle hydrodynamics method.
+        <br>
+        Details are documented in our recent article
+        <a href="https://doi.org/10.1360/SST-2022-0274" target="_blank">Numerical simulations of hypervelocity impacts to defend against small bodies</a>.
+      </p>
+    </div>
+    
+    <div>
+      <h1>
+        Access Request
+      </h1>
+      <p>
+        The code is freely available for academic and non-commercial uses, upon reasonable request by <a href="apply.html">Apply</a> to the authors.
+      </p>
+    </div>
+
+    <div>
+      <h1>
+        Contact
+      </h1>
+      <p>
+        Yifei Jiao (PhD student)<br>
+        Tsinghua University, Beijing, China<br>
+        Email: <a href="mailto:jiaoyf.thu@gmail.com">jiaoyf.thu@gmail.com</a><br>
+        Any feedback is highly appreciated.
+      </p>
+    </div>
+
+  </article>
+  </div>
+
 </body>
 </html>
