@@ -9,18 +9,20 @@
 </head>
 
 <style>
-  .div1{height:150px; background-color:#0F2434; float:top;}
+  .div1{height:140px; background-color:#0F2434; float:top;}
   .div2{height:100px; background-color:white; float:bottom;}
 </style>
 
 <body style="margin: 0">
   <div class="div1">
-    <a href="index.html"><img src="./images/mylogo2.png" height="150px"></a>
+    <a href="index.html"><img src="./images/mylogo2.png" width="400"></a>
   </div>
 
   <div class="div2">
     <article style="margin-top:30px; line-height:30px; margin-left:50px">
-      <form method="get" action="sendmail.php">
+      <form method="post" action="https://formspree.io/jiaoyf.thu@gmail.com">
+        <!-- <input type="hidden" name="_next" value="http://yourdomain.com/thank-you.html"> -->
+
         <h1>
           SPHSOL Access Request: Test Only & Unavailable Now!
         </h1>
@@ -52,3 +54,4 @@
   </div>
 </body>
 </html>
+
