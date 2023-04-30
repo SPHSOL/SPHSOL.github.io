@@ -12,53 +12,94 @@
 
 <body>
   <div class="top">
-    <a href="index.html"><img src="./images/mylogo2.png" height="150px"></a>
+    <a href="index.html" style="float: right"><img src="./images/mylogo2.png" height="100px"></a>
+    <ul class="nav_ul">
+      <li class="nav_li"><a href="index.html">Home</a></li>
+      <li class="nav_li"><a href="#feature">Features</a></li>
+      <li class="nav_li"><a href="apply.html">Apply</a></li>
+      <li class="nav_li"><a href="#contact">Contact</a></li>
+    </ul>
   </div>
 
-  <!-- <div class="left">
-    <ul>
-      <li><a href="#welcome">Welcome to SPHSOL</a></li>
-      <li><a href="#access">Access Request</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div> -->
-
-  <div class="right">
+  <div class="center">
     <div id="welcome">
-      <h2>
+      <h1>
         Welcome to SPHSOL
-      </h2>
-      <img src="./images/simu1.png" width="300px">
-      <img src="./images/simu2.png" width="300px">
-      <img src="./images/simu3.png" width="300px">
+        <img src="https://img.shields.io/badge/Version-1.4-brightgreen">
+        <img src="https://img.shields.io/badge/Platform-Linux--64-blue">
+        <img src="https://img.shields.io/badge/C++-Solutions-purple.svg?style=flat&logo=c%2B%2B">
+      </h1>
+      <img src="./images/simu1.png" width="30%">
+      <img src="./images/simu2.png" width="30%">
+      <img src="./images/simu3.png" width="30%">
       <p>
-        <b><i>SPHSOL</i></b> is developed for hypervelocity impact simulations in astrodynamics and planetary science, based on the smoothed particle hydrodynamics method.
-        <br>
+        <b>SPHSOL</b> is developed for hypervelocity impact simulations in astrodynamics and planetary science, based on the smoothed particle hydrodynamics method.
+        The code has been used to simulate asteroid collisons and spacecraft impacts to asteroids, as well as the formation of lunar craters.
         Details are documented in our recent article
         <a href="https://doi.org/10.1360/SST-2022-0274" target="_blank">Numerical simulations of hypervelocity impacts to defend against small bodies</a>.
       </p>
     </div>
+
+    <div id="feature">
+      <h1>
+        Features
+      </h1>
+      <p>
+        <ul>
+          <li>Shock physics for geological materials
+            <ul>
+              <li>Tillotson Equation of state</li>
+              <li>Elastic-perfactly plastic regime</li>
+              <li>Von-Mises/Lund yield criterion</li>
+              <li>Grady-Kipp damage model</li>
+              <li>Weibull-based fracture model</li>
+              <li>P-&#x03B1 porosity model</li>
+            </ul>
+          </li>
+          <li>Lagrangian smoothed particle hydrodynamics
+            <ul>
+              <li>Lagrangian governing equations</li>
+              <li>Artificial viscosity</li>
+              <li>Neighbor search based on mesh/K-d tree</li>
+              <li>Predictor-corrector integration</li>
+            </ul>
+          </li>
+          <li>
+            Parallel computing based on OpenMP
+          </li>
+        </ul>
+      </p>
+    </div>
     
     <div id="access">
-      <h2>
+      <h1>
         Access Request
-      </h2>
+      </h1>
       <p>
         The code is freely available for academic and non-commercial uses, upon reasonable request by <a href="apply.html">Apply</a> to the authors.
       </p>
     </div>
 
     <div id="contact">
-      <h2>
+      <h1>
         Contact
-      </h2>
-      <p>
+      </h1>
+      <p class="line-left">
         Yifei Jiao (PhD student)<br>
         Tsinghua University, Beijing, China<br>
         Email: <a href="mailto:jiaoyf.thu@gmail.com">jiaoyf.thu@gmail.com</a><br>
+      </p>
+      <p>
         Any feedback is highly appreciated.
       </p>
     </div>
+  </div>
+
+  <hr></hr>
+  <div class="bottom">
+    <p>
+      Copyright (c) SPHSOL Developers. | All rights reserved.
+    </p>
   </div>
 
 </body>
