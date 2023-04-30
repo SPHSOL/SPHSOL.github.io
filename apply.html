@@ -1,51 +1,87 @@
 <!doctype html>
-<html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+  <head>
+    <title>SPHSOL-FEATURES</title>
+    <meta name="author" content="Yifei Jiao">
+    <meta name="description" content="SPHSOL for high-velocity impact simulations">
+    <link rel="icon" href="./images/mylogo1.png" sizes="32x32">
 
-<head>
-  <title>SPHSOL-APPLY</title>
-  <meta name="author" content="Yifei Jiao">
-  <meta name="description" content="SPHSOL for high-velocity impact simulations">
-  <link rel="icon" href="./images/mylogo1.png" sizes="32x32">
-  <link rel="stylesheet" href="./css/style.css">
-</head>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/sticky-footer-navbar.css" rel="stylesheet">
+  </head>
 
-<body>
-  <div class="top">
-    <a href="index.html" style="float: left"><img src="./images/mylogo2.png" height="100px"></a>
-  </div>
+  <body class="d-flex flex-column h-100">
 
-  <div class="center">
-    <form method="post" action="https://formspree.io/f/mdovboll" class="box">
-      <!-- <input type="hidden" name="_next" value="http://yourdomain.com/thank-you.html"> -->
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">SPHSOL</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="features.html">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="apply.html">Apply</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-      <h1>
-        SPHSOL Access Request: Test Only & Unavailable Now!
-      </h1>
+    <!-- Begin page content -->
+    <main class="flex-shrink-0" style="margin-left: 30%; margin-right: 30%;">
+      <div class="container">
+        <form method="post" action="https://formspree.io/f/mdovboll" class="box">
+            
+          <h1>
+            SPHSOL Access Request: For Test & Unavailable!
+          </h1>
 
-      <font color="red">*</font> Your name<br>
-      <input type="text" name="name" required="required" style="width:600px"><br>
+          <p class="lead"><font color="red">*</font> Your name<br>
+          <input type="text" name="name" required="required" style="width:100%"><br>
+          </p>
 
-      <font color="red">*</font> Your email address<br>
-      <input type="email" name="email" required="required" style="width:600px"><br>
+          <p class="lead"><font color="red">*</font> Your email address<br>
+          <input type="email" name="email" required="required" style="width:100%"><br>
+          </p>
 
-      <font color="red">*</font> Your institution<br>
-      <input type="text" name="institution" required="required" style="width:600px"><br>
+          <p class="lead"><font color="red">*</font> Your institution<br>
+          <input type="text" name="institution" required="required" style="width:100%"><br>
+          </p>
 
-      <font color="red">*</font> Your intended use of SPHSOL<br>
-      <textarea name="use" rows="5" cols="60" required="required" style="width:600px"></textarea><br>
+          <p class="lead"><font color="red">*</font> Your intended use of SPHSOL<br>
+          <textarea name="use" rows="5" cols="60" required="required" style="width:100%"></textarea><br>
+          </p>
 
-      <font color="red">*</font> Your GitHub username<br>
-      <input type="text" name="github" required="required" style="width:600px"><br><br>
+          <p class="lead"><font color="red">*</font> Your GitHub username<br>
+          <input type="text" name="github" required="required" style="width:100%"><br>
+          </p>
 
-      <input type="checkbox" name="term1" required="required">
-      <font color="red">*</font> I promise to use the code only for personal, academic, and non-commercial purposes.<br>
+          <p class="lead"><input type="checkbox" name="term1" required="required">
+          <font color="red">*</font> I promise to use the code only for personal, academic, and non-commercial purposes.<br>
+          </p>
 
-      <input type="checkbox" name="term2" required="required">
-      <font color="red">*</font> I consent to the use of my email address for communication regarding this request.<br>
+          <p class="lead"><input type="checkbox" name="term2" required="required">
+          <font color="red">*</font> I consent to the use of my email address for communication regarding this request.<br>
+          </p>
 
-      <input type="submit" value="Send Request">
-    </form>
-  </div>
-</body>
+          <input type="submit" value="Send Request">
+        </form>
+      </div>
+    </main>
+  </body>
 </html>
 

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+  <head>
+    <title>SPHSOL-FEATURES</title>
+    <meta name="author" content="Yifei Jiao">
+    <meta name="description" content="SPHSOL for high-velocity impact simulations">
+    <link rel="icon" href="./images/mylogo1.png" sizes="32x32">
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+
+  <body class="d-flex flex-column h-100">
+    
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">SPHSOL</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="features.html">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="apply.html">Apply</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main class="flex-shrink-0" style="line-height: 2; margin-left: 20%; margin-right: 20%;">
+      <div class="container">
+        <p></p>
+        <h1>
+          Welcome to SPHSOL
+          <img src="https://img.shields.io/badge/Version-1.4-brightgreen" style="height: 24px">
+          <img src="https://img.shields.io/badge/Platform-Linux--64-blue" style="height: 24px">
+          <img src="https://img.shields.io/badge/C++-Solutions-purple.svg?style=flat&logo=c%2B%2B" style="height: 24px">
+        </h1>
+        <p></p>
+        <img src="./images/simu1.png" width="30%">
+        <img src="./images/simu2.png" width="30%">
+        <img src="./images/simu3.png" width="30%">
+        <p></p>
+        <p class="lead" style="text-align:justify">
+          SPHSOL is developed for hyper-velocity impact simulations in astrodynamics and planetary science, based on the smoothed particle hydrodynamics method.
+          The code has been used to simulate asteroid collisons and spacecraft impacts to asteroids, as well as the formation of lunar craters.
+          Details are documented in our recent article
+          <a href="https://doi.org/10.1360/SST-2022-0274" target="_blank">Numerical simulations of hypervelocity impacts to defend against small bodies</a>.
+        </p>
+
+        <h1>
+          Features
+        </h1>
+        <p class="lead">
+          <ul class="lead">
+            <li>Shock physics for geological materials
+              <ul>
+                <li>Tillotson Equation of state</li>
+                <li>Elastic-perfactly plastic regime</li>
+                <li>Von-Mises/Lund yield criterion</li>
+                <li>Grady-Kipp damage model</li>
+                <li>Weibull-based fracture model</li>
+                <li>P-&#x03B1 porosity model</li>
+              </ul>
+            </li>
+            <li>Lagrangian smoothed particle hydrodynamics
+              <ul>
+                <li>Lagrangian governing equations</li>
+                <li>Artificial viscosity</li>
+                <li>Neighbor search based on mesh/K-d tree</li>
+                <li>Predictor-corrector integration</li>
+              </ul>
+            </li>
+            <li>
+              Parallel computing based on OpenMP
+            </li>
+          </ul>
+        </p>
+
+        <h1>
+          Access Request
+        </h1>
+        <p class="lead">
+          The code is freely available for academic and non-commercial uses, upon reasonable request by <a href="apply.html">Apply</a> to the authors.
+        </p>
+
+        <h1>
+          Contact
+        </h1>
+        <p class="lead"><i>
+          Yifei Jiao (PhD student)<br>
+          Tsinghua University, Beijing, China<br>
+          Email: <a href="mailto:jiaoyf.thu@gmail.com">jiaoyf.thu@gmail.com</a><br></i>
+        </p>
+        <p class="lead">
+          Any feedback is highly appreciated.
+        </p>
+      </div>
+
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-body-tertiary">
+      <div class="container" style="text-align: center">
+        <span class="text-body-secondary">Copyright (c) SPHSOL Developers. | All rights reserved.</span>
+      </div>
+    </footer>
+      
+  </body>
+</html>
