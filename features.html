@@ -10,7 +10,7 @@
     <link href="./css/sticky-footer-navbar.css" rel="stylesheet">
   </head>
 
-  <body class="d-flex flex-column h-100">
+  <body>
     
     <header>
       <!-- Fixed navbar -->
@@ -42,74 +42,80 @@
     </header>
 
     <!-- Begin page content -->
-    <main class="flex-shrink-0" style="line-height: 2; margin-left: 20%; margin-right: 20%;">
+    <main class="flex-shrink-0" style="line-height: 2; margin-top: 30px; margin-bottom: 30px; margin-left: 20%; margin-right: 20%;">
       <div class="container">
-        <p></p>
-        <h1>
-          Welcome to SPHSOL
-          <img src="https://img.shields.io/badge/Version-1.4-brightgreen" style="height: 24px">
-          <img src="https://img.shields.io/badge/Platform-Linux--64-blue" style="height: 24px">
-          <img src="https://img.shields.io/badge/C++-Solutions-purple.svg?style=flat&logo=c%2B%2B" style="height: 24px">
-        </h1>
-        <p></p>
-        <img src="./images/simu1.png" width="30%">
-        <img src="./images/simu2.png" width="30%">
-        <img src="./images/simu3.png" width="30%">
-        <p></p>
-        <p class="lead">
-          SPHSOL is developed for hyper-velocity impact simulations in astrodynamics and planetary science, based on the smoothed particle hydrodynamics method.
-          The code has been used to simulate asteroid collisons and spacecraft impacts to asteroids, as well as the formation of lunar craters.
-          Details are documented in our recent article
-          <a href="https://doi.org/10.1360/SST-2022-0274" target="_blank">Numerical simulations of hypervelocity impacts to defend against small bodies</a>.
-        </p>
+        <div class="p-5 text-left bg-body-tertiary rounded-3">
+          <h1 class="text-body-emphasis">Welcome to SPHSOL
+            <img src="https://img.shields.io/badge/Version-1.4-brightgreen" style="height: 24px">
+            <img src="https://img.shields.io/badge/Platform-Linux--64-blue" style="height: 24px">
+            <img src="https://img.shields.io/badge/C++-Solutions-purple.svg?style=flat&logo=c%2B%2B" style="height: 24px">
+          </h1>
+          <p></p>
+          <img src="./images/simu1.png" width="30%">
+          <img src="./images/simu2.png" width="30%">
+          <img src="./images/simu3.png" width="30%">
+          <p></p>
+          <p class="lead">
+            SPHSOL is developed for hyper-velocity impact simulations in astrodynamics and planetary science, based on the smoothed particle hydrodynamics method.
+            The code has been used to simulate asteroid collisons and spacecraft impacts to asteroids, as well as the formation of lunar craters.
+            Details are documented in our recent article
+            <a href="https://doi.org/10.1360/SST-2022-0274" target="_blank">Numerical simulations of hypervelocity impacts to defend against small bodies</a>.
+          </p>
+        </div>
+      </div>
 
-        <h1>
-          Features
-        </h1>
-        <p class="lead">
-          <ul class="lead">
-            <li>Shock physics for geological materials
-              <ul>
-                <li>Tillotson Equation of state</li>
-                <li>Elastic-perfactly plastic regime</li>
-                <li>Von-Mises/Lund yield criterion</li>
-                <li>Grady-Kipp damage model</li>
-                <li>Weibull-based fracture model</li>
-                <li>P-&#x03B1 porosity model</li>
-              </ul>
-            </li>
-            <li>Lagrangian smoothed particle hydrodynamics
-              <ul>
-                <li>Lagrangian governing equations</li>
-                <li>Artificial viscosity</li>
-                <li>Neighbor search based on mesh/K-d tree</li>
-                <li>Predictor-corrector integration</li>
-              </ul>
-            </li>
-            <li>
-              Parallel computing based on OpenMP
-            </li>
-          </ul>
-        </p>
+      <div class="container">
+        <div class="p-5 text-left bg-body-tertiary rounded-3">
+          <h2 class="text-body-emphasis">Features</h2>
+          <p class="lead">
+            <ul class="lead">
+              <li>Shock physics for geological materials
+                <ul>
+                  <li>Tillotson Equation of state</li>
+                  <li>Elastic-perfactly plastic regime</li>
+                  <li>Von-Mises/Lund yield criterion</li>
+                  <li>Grady-Kipp damage model</li>
+                  <li>Weibull-based fracture model</li>
+                  <li>P-&#x03B1 porosity model</li>
+                </ul>
+              </li>
+              <li>Lagrangian smoothed particle hydrodynamics
+                <ul>
+                  <li>Lagrangian governing equations</li>
+                  <li>Artificial viscosity</li>
+                  <li>Neighbor search based on mesh/K-d tree</li>
+                  <li>Predictor-corrector integration</li>
+                </ul>
+              </li>
+              <li>
+                Parallel computing based on OpenMP
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
 
-        <h1>
-          Access Request
-        </h1>
-        <p class="lead">
-          The code is freely available for academic and non-commercial uses, upon reasonable request by <a href="apply.html">Apply</a> to the authors.
-        </p>
+      <div class="container">
+        <div class="p-5 text-left bg-body-tertiary rounded-3">
+          <h2 class="text-body-emphasis">Access Request</h2>
+          <p class="lead">
+            The code is freely available for academic and non-commercial uses, upon reasonable request by <a href="apply.html">Apply</a> to the authors.
+          </p>
+        </div>
+      </div>
 
-        <h1>
-          Contact
-        </h1>
-        <p class="lead"><i>
-          Yifei Jiao (PhD student)<br>
-          Tsinghua University, Beijing, China<br>
-          Email: <a href="mailto:jiaoyf.thu@gmail.com">jiaoyf.thu@gmail.com</a><br></i>
-        </p>
-        <p class="lead">
-          Any feedback is highly appreciated.
-        </p>
+      <div class="container">
+        <div class="p-5 text-left bg-body-tertiary rounded-3">
+          <h2 class="text-body-emphasis">Contact</h2>
+          <p class="lead"><i>
+            Yifei Jiao (PhD student)<br>
+            Tsinghua University, Beijing 100084, China<br>
+            Email: <a href="mailto:jiaoyf.thu@gmail.com">jiaoyf.thu@gmail.com</a><br></i>
+          </p>
+          <p class="lead">
+            Any feedback is highly appreciated.
+          </p>
+        </div>
       </div>
 
     </main>
